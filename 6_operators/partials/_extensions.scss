@@ -1,0 +1,26 @@
+%list-item {
+  display: flex;
+  padding: 0 15px;
+  height: 70px;
+  border-bottom: solid 1px lightgray;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $box-shadow-sm;
+  }
+  &:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  &:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+%section {
+  margin-bottom: 2em;
+  border-radius: $border-radius-sm;
+  box-shadow: $box-shadow-md;
+}

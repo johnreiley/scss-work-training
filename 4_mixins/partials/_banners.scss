@@ -1,0 +1,16 @@
+.banner {
+  text-align: center;
+  padding: 3em;
+  background-color: rgb(255, 242, 242);
+  border-top: solid 2px $primary-color;
+  border-bottom: solid 2px $primary-color;
+
+  .banner-header {
+    font-size: 200%;
+    font-weight: 400;
+  }
+
+  .banner-text {
+    font-size: 90%;
+  }
+}

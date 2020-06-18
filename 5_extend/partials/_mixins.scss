@@ -1,0 +1,5 @@
+@mixin borderTopBottom($color: black) {
+  border-top: solid 2px $color;
+  border-bottom: solid 2px $color;
+}
+

@@ -1,0 +1,30 @@
+@import './mixins';
+
+.users {
+  @include borderTopBottom(rgb(219, 218, 216));
+
+  .user-list .user-summary {
+    
+    &:hover {
+      background-color: rgb(247, 247, 247);
+    }
+
+    .user-summary-image {
+      object-fit: cover;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+    }
+
+    .user-summary-name {
+      font-weight: 400;
+      padding: 0 1em;
+    }
+
+    .user-summary-description {
+      background-color: rgb(233, 233, 233);
+      padding: 10px;
+      border-radius: $border-radius-sm;
+    }
+  }
+}

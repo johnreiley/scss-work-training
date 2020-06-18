@@ -1,0 +1,51 @@
+.nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: $nav-height;
+  color: white;
+  background-color: $primary-color;
+  box-shadow: $box-shadow-md;
+}
+
+.nav .nav-icon-container {
+  cursor: pointer;
+  margin: 0 2em;
+  display: flex;
+  height: inherit;
+  align-items: center;
+
+  .nav-icon {
+    height: 50px;
+  }
+
+  .nav-title {
+    padding-left: 0.5em;
+  }
+}
+
+.nav .nav-list {
+  margin: 0;
+  padding: 0;
+  height: inherit;
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  .nav-list-item {
+    user-select: none;
+    cursor: pointer;
+    line-height: $nav-height;
+    padding: 0 1em;
+    height: 100%;
+    color: white;
+
+    &:hover {
+      background-color: $primary-color-dark;
+      box-shadow: $box-shadow-sm;
+    }
+  }
+}
